@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Capítulo IX - El Hombre que Calculaba</title>
+    <!-- Vinculamos la hoja de estilos externa -->
+    <link rel="stylesheet" href="css/IXestilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Título principal basado en el Capítulo 9 -->
+        <h2>Capítulo IX: El Enigma del Astrólogo</h2>
+        <p>Calcular el año de nacimiento y verificar la edad de acuerdo con los cálculos del libro[span_3](start_span)[span_3](end_span).</p>
+        
+        <!-- Formulario básico -->
+        <form id="capituloForm">
+            <div class="form-group">
+                <label for="valAnio">Año Actual:</label>
+                <input type="number" id="valAnio" value="2026" required>
+            </div>
+            <div class="form-group">
+                <label for="valEdad">Edad de la persona:</label>
+                <input type="number" id="valEdad" placeholder="Ej: 30" required>
+            </div>
+            <!-- Botón que ejecuta la función de JavaScript -->
+            <button type="button" onclick="resolverProblema()">Calcular Año</button>
+        </form>
+
+        <!-- Contenedor donde se mostrará la salida de datos -->
+        <div class="result" id="resultado">Los resultados aparecerán aquí.</div>
+    </div>
+
+    <!-- Vinculamos el archivo JavaScript externo -->
+    <script src="js/ejeIX.js"></script>
+</body>
+</html>

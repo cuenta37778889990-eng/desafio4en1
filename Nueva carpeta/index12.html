@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Quadroots - Ecuación Cuadrática</title>
+    <!-- Vinculamos la hoja de estilos externa -->
+    <link rel="stylesheet" href="css/12estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Título de la aplicación -->
+        <h2>Quadroots: Ecuación ax² + bx + c = 0</h2>
+        
+        <!-- Formulario de entrada de datos -->
+        <form id="quadForm">
+            <div class="form-group">
+                <label for="valA">Valor de a:</label>
+                <input type="number" id="valA" step="any" placeholder="Ej: 3" required>
+            </div>
+            <div class="form-group">
+                <label for="valB">Valor de b:</label>
+                <input type="number" id="valB" step="any" placeholder="Ej: 6" required>
+            </div>
+            <div class="form-group">
+                <label for="valC">Valor de c:</label>
+                <input type="number" id="valC" step="any" placeholder="Ej: 3" required>
+            </div>
+            <!-- Botón que ejecuta la función de cálculo en JavaScript -->
+            <button type="button" onclick="resolverEcuacion()">Calcular</button>
+        </form>
+
+        <!-- Contenedor donde se mostrará la salida de datos -->
+        <div class="result" id="resultado">Los resultados aparecerán aquí.</div>
+    </div>
+
+    <!-- Vinculamos el archivo JavaScript externo -->
+    <script src="js/eje12.js" ></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto Integrado - 4 Ejercicios</title>
+    <!-- Vinculamos los 4 archivos CSS en la cabecera -->
+    <link rel="stylesheet" href="css/12estilos.css">
+    <link rel="stylesheet" href="css/13estilos.css">
+    <link rel="stylesheet" href="css/IXestilos.css">
+    <link rel="stylesheet" href="css/VIIIestilos.css">
+    <style>
+        /* Estilos generales para organizar las 4 secciones en una sola página */
+        body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f4f9; }
+        .section-container { background: white; padding: 25px; margin-bottom: 30px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+    <h1>Panel Principal: Ejercicios y Capítulos</h1>
+
+    <!-- ================= SECCIÓN 1: Ejercicio 12 ================= -->
+    <div class="section-container">
+        <h2>Ejercicio 12: Quadroots (Ecuación ax² + bx + c = 0)</h2>
+        <form id="quadForm">
+            <div class="form-group">
+                <label for="valA">Valor de a:</label>
+                <input type="number" id="valA" step="any" placeholder="Ej: 3" required>
+            </div>
+            <div class="form-group">
+                <label for="valB">Valor de b:</label>
+                <input type="number" id="valB" step="any" placeholder="Ej: 6" required>
+            </div>
+            <div class="form-group">
+                <label for="valC">Valor de c:</label>
+                <input type="number" id="valC" step="any" placeholder="Ej: 3" required>
+            </div>
+            <button type="button" onclick="resolverEcuacion()">Calcular</button>
+        </form>
+        <div class="result" id="resultado12">Los resultados aparecerán aquí.</div>
+    </div>
+
+    <!-- ================= SECCIÓN 2: Ejercicio 13 ================= -->
+    <div class="section-container">
+        <h2>Ejercicio 13 - Estimación de Pi ($\pi$)</h2>
+        <p>Fórmula: $\sqrt{6 \sum_{n=1}^{\infty} \frac{1}{n^2}}$</p>
+        <form id="piForm">
+            <div class="form-group">
+                <label for="valN">Ingrese el valor de n (ej: 100, 10000, 1000000):</label>
+                <input type="number" id="valN" placeholder="Ej: 100" min="1" required>
+            </div>
+            <button type="button" onclick="calcularPi()">Calcular Pi</button>
+        </form>
+        <div class="result" id="resultado13">Los resultados aparecerán aquí.</div>
+    </div>
+
+    <!-- ================= SECCIÓN 3: Capítulo IX ================= -->
+    <div class="section-container">
+        <h2>Capítulo IX: El Enigma del Astrólogo</h2>
+        <p>Calcular el año de nacimiento y verificar la edad de acuerdo con los cálculos del libro[span_0](start_span)[span_0](end_span).</p>
+        <form id="capituloFormIX">
+            <div class="form-group">
+                <label for="valAnio">Año Actual:</label>
+                <input type="number" id="valAnio" value="2026" required>
+            </div>
+            <div class="form-group">
+                <label for="valEdad">Edad de la persona:</label>
+                <input type="number" id="valEdad" placeholder="Ej: 30" required>
+            </div>
+            <button type="button" onclick="resolverProblemaIX()">Calcular Año</button>
+        </form>
+        <div class="result" id="resultadoIX">Los resultados aparecerán aquí.</div>
+    </div>
+
+    <!-- ================= SECCIÓN 4: Capítulo VIII ================= -->
+    <div class="section-container">
+        <h2>Capítulo VIII: Las 21 Vasijas</h2>
+        <p>Problema: Repartir 7 vasijas llenas, 7 semillenas y 7 vacías entre 3 personas en partes iguales[span_1](start_span)[span_1](end_span).</p>
+        <form id="capituloFormVIII">
+            <button type="button" onclick="resolverProblemaVIII()">Mostrar Solución</button>
+        </form>
+        <div class="result" id="resultadoVIII">Presione el botón para ver el algoritmo y la solución.</div>
+    </div>
+<!-- Vinculamos los 4 archivos JavaScript -->
+    <script src="js/eje12.js"></script>
+    <script src="js/eje13.js"></script>
+    <script src="js/ejeIX.js"></script>
+    <script src="js/ejeVIII.js"></script>
+</body>
+</html>

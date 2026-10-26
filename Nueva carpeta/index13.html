@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 13 - Estimación de Pi</title>
+    <!-- Vinculamos la hoja de estilos externa -->
+    <link rel="stylesheet" href="css/13estilos.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Título de la aplicación basado en el ejercicio 13 -->
+        <h2>Estimación del valor de Pi ($\pi$)</h2>
+        <p>Fórmula: $\sqrt{6 \sum_{n=1}^{\infty} \frac{1}{n^2}}$</p>
+        
+        <!-- Formulario de entrada de datos -->
+        <form id="piForm">
+            <div class="form-group">
+                <label for="valN">Ingrese el valor de n (ej: 100, 10000, 1000000):</label>
+                <input type="number" id="valN" placeholder="Ej: 100" min="1" required>
+            </div>
+            <!-- Botón que ejecuta la función de cálculo en JavaScript -->
+            <button type="button" onclick="calcularPi()">Calcular Pi</button>
+        </form>
+
+        <!-- Contenedor donde se mostrará la salida de datos -->
+        <div class="result" id="resultado">Los resultados aparecerán aquí.</div>
+    </div>
+
+    <!-- Vinculamos el archivo JavaScript externo -->
+    <script src="js/eje13.js"></script>
+</body>
+</html>

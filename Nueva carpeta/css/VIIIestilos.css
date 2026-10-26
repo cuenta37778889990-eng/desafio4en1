@@ -1,0 +1,49 @@
+/* Estilos generales para el fondo y la tipografía */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f9;
+}
+
+/* Contenedor principal en forma de tarjeta */
+.container {
+    max-width: 500px;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los textos descriptivos */
+p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Estilo del botón interactivo */
+button {
+    padding: 10px 15px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Efecto hover al pasar el cursor por el botón */
+button:hover {
+    background-color: #5a6268;
+}
+
+/* Estilo para la caja de resultados (salida) */
+.result {
+    margin-top: 20px;
+    padding: 12px;
+    background: #e9ecef;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.6;
+}
